@@ -1,16 +1,11 @@
 pipeline {
     agent any
 
-    tools {
-        maven 'MAVEN3'
-        jdk 'JAVA17'
-    }
-
     stages {
 
         stage('Checkout') {
             steps {
-                git 'https://github.com/your-username/java-jenkins-demo.git'
+                git 'https://github.com/Reshufowzi/java-jenkins-demo.git'
             }
         }
 
